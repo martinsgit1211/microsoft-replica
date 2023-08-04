@@ -1,38 +1,183 @@
-.App {
-  text-align: center;
-}
+body {
+  background-image: url(./img/2_11d9e3bcdfede9ce5ce5ace2d129f1c4.svg);
+    margin: 0;
+    font-family:"Segoe UI Webfont",-apple-system,"Helvetica Neue","Lucida Grande","Roboto","Ebrima","Nirmala UI","Gadugi","Segoe Xbox Symbol","Segoe UI Symbol","Meiryo UI","Khmer UI","Tunga","Lao UI","Raavi","Iskoola Pota","Latha","Leelawadee","Microsoft YaHei UI","Microsoft JhengHei UI","Malgun Gothic","Estrangelo Edessa","Microsoft Himalaya","Microsoft New Tai Lue","Microsoft PhagsPa","Microsoft Tai Le","Microsoft Yi Baiti","Mongolian Baiti","MV Boli","Myanmar Text","Cambria Math";
+  }
+  
+  .container {
+    position: relative;
+   top: 100px;
+  }
+  .container2{
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    max-width: 410px;
+    width: calc(100% - 40px);
+    padding: 44px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 6px rgba(0,0,0,.2);
+    /* min-width: 320px; */
+    min-height: 280px;
+    overflow: hidden;
+  }
+  .sign-text{
+   position:relative;
+   top:5px;
+    padding:0px 12px;
+    font-size:17px;
+  }
+  #next{
+    font-size:17px;
+    background-color: #0067b8;
+    position: relative;
+    left: 75%;
+    color:#fff;
+    border: none;
+    min-width: 110px;
+    min-height: 32px;
+    padding: 5px 14px;
+  }
+  .logo{
+    height: 26px; 
+    width:110px; 
+    max-width:258px;
+  }
+  h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  h2 {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  #ques{
+    text-align: center;
+    border-radius: 100%;
+    margin-left: 5px;
+    padding: 8px;
+    width: 16px;
+    display: inline-block;
+    height: 16px;
+    border: 1px black solid;
+  }
+  input {
+    width: 100%;
+   /* border:none; */
+    padding: 10px 10px 10px 0px;
+    margin-bottom: 10px;
+    font-size: 15px;
+    border-style: solid;
+    border-top-width: 0;
+    border-left-width: 0;
+    border-right-width: 0;
+    border-color: rgba(0,0,0,.6);
+  }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+  .key{
+    width:35px;
+  }
+  a {
+    text-decoration: none;
+    color: #000;
+  }
+  
+  .sign-in-options {
+    box-shadow: 0 2px 6px rgba(0,0,0,.2);
+    display:flex;
+    align-content:center;
+    margin-top: 20px;
+    background-color: white;
+    max-width: 410px;
+    width: calc(100% - 40px);
+    padding: 8px 44px;
+    margin: 0 auto;
+  }
+  
+  .sign-in-options a {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  .sign-in-options:hover {
+    background: rgba(0,0,0,.1);
+    cursor: pointer;
+  }
+  #next:hover{
+    cursor:pointer;
+    background:  #004b84;
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+  }
+  #link:hover{
+    text-decoration:underline;
+    color: rgba(0,0,0,.2);
+  }
+  .footer{
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      overflow: visible;
+      z-index: 99;
+      clear: both;
+      min-height: 28px;
+      color: #1b1b1b;
+  }
+ .footer-links{
+  margin: 0px;
+  float: right;
+  color: rgba(0,0,0,.7);
+    font-size: 13px;
+ }
+ .footer-text{
+  color: #000;
+    font-size: 13px;
+    line-height: 28px;
+    white-space: nowrap;
+    display: inline-block;
+    margin-left: 8px;
+    margin-right: 8px;
+ }
+
+@media screen and (max-width:600px) {
+  body{
+    background-image: none;
+    background-color: white;
+  }
+  .sign-in-options {
+    box-shadow: none;
+    border: 0.5px rgba(0,0,0,.3) solid;
+    width: 72%;
+    padding: 8px 32px;
+  }
+  .container{
+    margin-top: 1.5rem;
+  }
+  .container2{
+    box-shadow: none;
+    width: 88%;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    padding: 0px;
+  }
+  #myInput{
+    width: 100%;
+  }
+  #next{
+    position: relative;
+    left:65%;
+  }
+  p, #link{
+    font-size: 13px;
+    margin-top: 10px;
+  }
+  .sign-text{
+    font-size: 15px;
+  }
+  .key{
+    width: 32px;
+    height: 32px;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
