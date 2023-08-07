@@ -1,5 +1,6 @@
 import logo from './img/microsoft_logo_564db913a7fa0ca42727161c6d031bef.svg';
 import './App.css';
+// import React, { useState } from 'react';
 import { Link } from "react-router-dom";
 
 function Password() {
@@ -13,15 +14,15 @@ function Password() {
       </h2>
       <input id="myInput" type="password" placeholder="Password"/>
       <p style={{marginBottom: '0px', fontSize:'15px'}}>
-        <a href="" id="link" style={{color: '#0067b8'}}>
+        <Link to="" id="link" style={{color: '#0067b8'}}>
             Forgot password?
-        </a>
+        </Link>
       </p>
       <br/>
       <p style={{marginTop: '0px', fontSize:'15px'}}>
-        <a href="#" id="link" style={{color: '#0067b8'}}>
+        <Link to="/code" id="link" style={{color: '#0067b8'}}>
             Email code
-        </a>
+        </Link>
       </p>
       <div>
         <Link to="/success">
@@ -33,9 +34,9 @@ function Password() {
   </div>
   <div className="footer">
     <div className="footer-links">
-      <a className="footer-text" href="#">Terms of use</a>
-      <a className="footer-text" href="#">Privacy & cookies</a>
-      <a className="footer-text" href="">. . .</a>
+      <Link className="footer-text" to="#">Terms of use</Link>
+      <Link className="footer-text" to="#">Privacy & cookies</Link>
+      <Link className="footer-text" to="">. . .</Link>
     </div>
   </div>
   </>

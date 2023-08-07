@@ -1,14 +1,14 @@
 body {
-  background-image: url(./img/2_11d9e3bcdfede9ce5ce5ace2d129f1c4.svg);
+    background-image: url(./img/2_11d9e3bcdfede9ce5ce5ace2d129f1c4.svg);
     margin: 0;
     font-family:"Segoe UI Webfont",-apple-system,"Helvetica Neue","Lucida Grande","Roboto","Ebrima","Nirmala UI","Gadugi","Segoe Xbox Symbol","Segoe UI Symbol","Meiryo UI","Khmer UI","Tunga","Lao UI","Raavi","Iskoola Pota","Latha","Leelawadee","Microsoft YaHei UI","Microsoft JhengHei UI","Malgun Gothic","Estrangelo Edessa","Microsoft Himalaya","Microsoft New Tai Lue","Microsoft PhagsPa","Microsoft Tai Le","Microsoft Yi Baiti","Mongolian Baiti","MV Boli","Myanmar Text","Cambria Math";
   }
   
-  .container {
+.container {
     position: relative;
-   top: 100px;
+    top: 100px;
   }
-  .container2{
+.container2{
     background-color: white;
     margin-left: auto;
     margin-right: auto;
@@ -18,17 +18,16 @@ body {
     padding: 44px;
     margin-bottom: 30px;
     box-shadow: 0 2px 6px rgba(0,0,0,.2);
-    /* min-width: 320px; */
     min-height: 280px;
     overflow: hidden;
   }
-  .sign-text{
-   position:relative;
-   top:5px;
+.sign-text{
+    position:relative;
+    top:5px;
     padding:0px 12px;
     font-size:17px;
   }
-  #next{
+#next{
     font-size:17px;
     background-color: #0067b8;
     position: relative;
@@ -39,21 +38,20 @@ body {
     min-height: 32px;
     padding: 5px 14px;
   }
-  .logo{
+.logo{
     height: 26px; 
     width:110px; 
     max-width:258px;
   }
-  h1 {
+h1 {
     font-size: 24px;
     margin-bottom: 10px;
   }
-  
-  h2 {
+h2 {
     font-size: 18px;
     margin-bottom: 20px;
   }
-  #ques{
+#ques{
     text-align: center;
     border-radius: 100%;
     margin-left: 5px;
@@ -63,9 +61,8 @@ body {
     height: 16px;
     border: 1px black solid;
   }
-  input {
+input {
     width: 100%;
-   /* border:none; */
     padding: 10px 10px 10px 0px;
     margin-bottom: 10px;
     font-size: 15px;
@@ -75,16 +72,17 @@ body {
     border-right-width: 0;
     border-color: rgba(0,0,0,.6);
   }
-
-  .key{
+input:focus{
+  outline: none;
+}
+.key{
     width:35px;
   }
-  a {
+a {
     text-decoration: none;
     color: #000;
   }
-  
-  .sign-in-options {
+.sign-in-options {
     box-shadow: 0 2px 6px rgba(0,0,0,.2);
     display:flex;
     align-content:center;
@@ -95,49 +93,55 @@ body {
     padding: 8px 44px;
     margin: 0 auto;
   }
-  
-  .sign-in-options a {
+.sign-in-options a {
     display: inline-block;
     margin-right: 10px;
   }
-  .sign-in-options:hover {
+.sign-in-options:hover {
     background: rgba(0,0,0,.1);
     cursor: pointer;
   }
-  #next:hover{
+#next:hover{
     cursor:pointer;
     background:  #004b84;
-
   }
-  #link:hover{
+#link:hover{
     text-decoration:underline;
     color: rgba(0,0,0,.2);
   }
-  .footer{
-      position: absolute;
-      left: 0;
-      bottom: 0;
-      width: 100%;
-      overflow: visible;
-      z-index: 99;
-      clear: both;
-      min-height: 28px;
-      color: #1b1b1b;
+  #arrow{
+    position: relative;
+    top: 7px;
+    border-radius: 50%;
   }
- .footer-links{
+  #arrow:hover{
+    background-color: rgba(0,0,0,.2);
+  }
+.footer{
+   position: absolute;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   overflow: visible;
+   z-index: 99;
+   clear: both;
+   min-height: 28px;
+   color: #1b1b1b;
+  }
+.footer-links{
   margin: 0px;
   float: right;
   color: rgba(0,0,0,.7);
-    font-size: 13px;
+  font-size: 13p 
  }
- .footer-text{
+.footer-text{
   color: #000;
-    font-size: 13px;
-    line-height: 28px;
-    white-space: nowrap;
-    display: inline-block;
-    margin-left: 8px;
-    margin-right: 8px;
+  font-size: 13px;
+  line-height: 28px;
+  white-space: nowrap;
+  display: inline-block;
+  margin-left: 8px;
+  margin-right: 8px;
  }
 
 @media screen and (max-width:600px) {
